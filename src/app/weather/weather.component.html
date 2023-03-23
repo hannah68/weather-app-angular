@@ -1,0 +1,12 @@
+<div>
+    <form (submit)="submitCityHandler()">
+        <div class="form-group">
+            <label for="city">Enter city name</label>
+            <input type="text" name="city" id="city" [(ngModel)]="cityName" required>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <p *ngIf="temperature">Temperature in {{cityName}} is {{temperature}} °C</p>
+    <p *ngIf="description">description: {{description}}</p>
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>

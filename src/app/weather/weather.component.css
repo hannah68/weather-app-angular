@@ -1,0 +1,10 @@
+form{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group{
+    display: flex;
+    gap: 1rem;
+}
